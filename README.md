@@ -2,55 +2,43 @@
 
 ## Project Overview
 
-This project is a Python-based interactive dashboard for visualizing COVID-19 data. It demonstrates proficiency in data analysis, visualization, and software development, making it an excellent portfolio piece for a data analyst position.
+This project is a Python-based interactive dashboard for visualizing COVID-19 data. It demonstrates basic data handling, visualization, and GUI development skills, serving as an introductory portfolio piece for data analysis and Python programming.
 
 ## Features
 
-1. **Interactive Country Selection**: Users can choose from a dropdown menu of countries to visualize data.
-2. **Multi-faceted Data Visualization**: The dashboard presents three key aspects of COVID-19 data:
-   - Daily New Cases
-   - Daily New Deaths
+1. **Country Selection**: Users can choose a country from a dropdown menu to visualize its data.
+2. **Multi-faceted Data Visualization**: The dashboard presents three aspects of COVID-19 data:
+   - Daily New Cases (7-day average)
+   - Daily New Deaths (7-day average)
    - Vaccination Progress
-3. **Time Series Analysis**: All data is presented over time, allowing for trend analysis.
-4. **Data Smoothing**: 7-day moving averages are used to smooth out daily fluctuations in case and death data.
-5. **Responsive Design**: The dashboard adjusts to display data for the selected country in real-time.
+3. **Time Series Visualization**: All data is presented over time, allowing for basic trend visualization.
 
-## Technologies and Methodologies
+## Technologies and Methodologies Used
 
 ### 1. Data Acquisition and Processing
 - **Data Source**: Our World in Data (OWID) COVID-19 dataset
 - **Library Used**: Pandas
 - **Methodology**: 
   - Data is fetched directly from OWID's GitHub repository using Pandas' `read_csv` function.
-  - Date parsing is performed to convert string dates to datetime objects for proper time series analysis.
+  - Basic data processing: Converting date strings to datetime objects for proper plotting.
 
 ### 2. Data Visualization
 - **Library Used**: Matplotlib
-- **Methodologies**:
+- **Methodology**:
   - Line plots are used to visualize trends over time.
-  - Different color schemes are employed for each type of data for clear distinction.
-  - Proper labeling and titles are added for clarity and context.
+  - Separate plots are created for cases, deaths, and vaccination data.
 
 ### 3. Interactive GUI Development
 - **Library Used**: Tkinter
-- **Methodologies**:
-  - Object-Oriented Programming (OOP) principles are applied to create a structured and maintainable codebase.
-  - Event-driven programming is used to handle user interactions.
-  - Matplotlib figures are embedded in Tkinter canvas for seamless integration of plots in the GUI.
+- **Methodology**:
+  - A simple GUI is created with a dropdown for country selection and tabs for different data views.
+  - Basic event handling is implemented to update plots when a country is selected.
 
-### 4. Data Analysis Techniques
-- **Time Series Analysis**: Data is analyzed and presented as a time series, allowing for trend identification.
-- **Data Smoothing**: 7-day moving averages are used to reduce noise and highlight trends in daily case and death data.
-- **Comparative Analysis**: The ability to switch between countries allows for easy comparison of COVID-19 situations in different regions.
-- **Vaccination Progress Tracking**: Vaccination data is presented as a percentage of the population, allowing for standardized comparison across countries of different sizes.
+## Code Structure
 
-## Code Structure and Best Practices
-
-1. **Modular Design**: The code is organized into a class structure, promoting reusability and maintainability.
-2. **Error Handling**: Try-except blocks are used to gracefully handle potential errors, especially during data loading.
-3. **Code Comments**: Throughout the script, comments are used to explain complex operations and improve code readability.
-4. **Efficient Data Manipulation**: Pandas is used for efficient handling of large datasets.
-5. **Scalability**: The design allows for easy addition of new data visualizations or features.
+1. **Class-based Design**: The code is organized into a `CovidDataDashboard` class, demonstrating basic object-oriented programming.
+2. **Data Loading**: Data is loaded once at initialization and stored in a Pandas DataFrame.
+3. **Plot Updates**: Separate methods handle the creation and updating of plots.
 
 ## Running the Project
 
@@ -64,13 +52,21 @@ This project is a Python-based interactive dashboard for visualizing COVID-19 da
    python covid_dashboard.py
    ```
 
-## Future Enhancements
+## Limitations and Potential Improvements
 
-1. Add more statistical analyses (e.g., growth rates, correlations between variables).
-2. Implement predictive modeling for future trend forecasting.
-3. Add data export functionality for further analysis in other tools.
-4. Integrate more data sources for a comprehensive view of the pandemic's impact.
+1. **Data Analysis**: The current implementation focuses on data visualization without performing additional statistical analysis.
+2. **Data Refresh**: The dashboard loads data once at startup and doesn't include functionality to refresh or update the dataset.
+3. **Error Handling**: Basic error handling is implemented, primarily for data loading issues.
+4. **Performance**: For countries with large datasets, plot updates might be slow. Optimization could be implemented for larger datasets.
+
+## Skills Demonstrated
+
+1. **Basic Data Handling**: Using Pandas to load and process CSV data.
+2. **Data Visualization**: Creating simple time-series plots with Matplotlib.
+3. **GUI Development**: Building a basic interactive interface with Tkinter.
+4. **Python Programming**: Demonstrating understanding of functions, classes, and basic Python syntax.
+5. **Working with Real-world Data**: Handling and visualizing actual COVID-19 data.
 
 ## Conclusion
 
-This COVID-19 Data Visualization Dashboard demonstrates strong skills in data analysis, visualization, and software development. It showcases the ability to work with real-world data, create interactive visualizations, and build user-friendly interfaces for data exploration. The methodologies used in this project, including time series analysis, data smoothing, and comparative analysis, are directly applicable to many data analysis tasks across various industries.
+This COVID-19 Data Visualization Dashboard serves as a starting point for data visualization projects. It demonstrates basic skills in Python programming, data handling, and GUI development. While it doesn't include advanced statistical analysis or complex features, it provides a foundation for further learning and development in data analysis and visualization.
