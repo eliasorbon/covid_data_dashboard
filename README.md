@@ -6,6 +6,8 @@ This project is a Python-based interactive dashboard for visualizing COVID-19 da
 
  ![COVID-19 Dashboard Screenshot](CovidDashboard.png)
 
+Figure 1: COVID-19 Data Visualization Dashboard showing case trends, death rates, and vaccination progress for a selected country
+
 ## Features
 
 1. **Country Selection**: Users can choose a country from a dropdown menu to visualize its data.
