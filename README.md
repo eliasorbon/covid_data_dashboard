@@ -49,7 +49,7 @@ This project is a Python-based interactive dashboard for visualizing COVID-19 da
    ```
 3. Run the script:
    ```
-   python covid_dashboard.py
+   python covid_data_dashboard.py
    ```
 
 ## Limitations and Potential Improvements
