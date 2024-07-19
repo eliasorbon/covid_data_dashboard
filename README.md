@@ -4,6 +4,8 @@
 
 This project is a Python-based interactive dashboard for visualizing COVID-19 data. It demonstrates basic data handling, visualization, and GUI development skills, serving as an introductory portfolio piece for data analysis and Python programming.
 
+ ![COVID-19 Dashboard Screenshot](CovidDashboard.png)
+
 ## Features
 
 1. **Country Selection**: Users can choose a country from a dropdown menu to visualize its data.
